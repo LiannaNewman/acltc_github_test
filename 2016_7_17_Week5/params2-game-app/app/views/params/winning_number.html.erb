@@ -1,0 +1,9 @@
+<h1>I'm thinking of a number, what's your guess?</h1>
+
+<%= form_tag("/winning_number", method: "post") do %>
+  <%= label_tag(:guess, "winning_number") %>
+  <%= text_field_tag(:guess) %>
+  <%= submit_tag("Guess") %>
+<% end %>
+
+<h2><%= @message %></h2>

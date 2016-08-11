@@ -1,0 +1,82 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 #1\
+#A) STRING INTEGER METHOD\
+#str * integer 
+\f1 \uc0\u8594 
+\f0  new_str\
+#The String Integer Method takes a string, multiplies it, using an asterisk, by a certain number that is greater than or equal to 0, resulting in a new string that has as #many copies of the first string that the integer specified. If for example the string is a word, it would return a new string with multiple copies of the word. If #the integer is equal to 0, the returned string would be empty.\
+\
+#"Hello World! " * 4   #=> "Hello World! Hello World! Hello World! Hello World!"\
+#"Hello World! " * 0   #=> ""\
+#*************************\
+\
+#B) STRING OTHER_STRING METHOD\
+#string <=> other_string 
+\f1 \uc0\u8594 
+\f0  -1, 0, +1 or nil click to toggle source\
+#Comparison\'97Returns -1, 0, +1 or nil depending on whether string is less than, equal to, or greater than other_string.\
+#The String Other_String Method, compares the character length of the first string to the character length of the second string using the <=> symbol; it then #returns either -1, 0, +1 to indicate whether the first string is less than, equal to, or greater than the second string, respectively. If the two strings can not be #compared, the program will return nil. If the strings are the same length, but they do not match, the program will consider the first string greater than the #second string and return a '1'.\
+\
+#"dogs" <=> "dogs" => 0\
+#"dogs" <=> "cats" => 1\
+#"dogs" <=> "doggie" => 1\
+#"dogs" <=> 1123 => nil\
+#"dog" <=> "dogs" => -1\
+\
+#*************************\
+\
+#C) REPLACE METHOD\
+#replace(other_str) 
+\f1 \uc0\u8594 
+\f0  str\
+\
+#The Replace Method, denoted by using '.replace' at the end of a string, takes the characters in a string and replaces them with characters from a new string.\
+\
+#greeting = "hello"         #=> "hello"\
+#greeting.replace "hey"   #=> "hey"\
+\
+#*************************\
+\
+#D) INSERT METHOD\
+#insert(index, other_str) 
+\f1 \uc0\u8594 
+\f0  str\
+\
+#The Insert Method is denoted by using '.insert' followed by parentheses '()' which contain an index and a new string [.insert(index, "new string")]. The Insert #Method will add the new string that is in the parentheses, to an existing string, by inserting the new string before the character at the indicated index. \
+#If a negative index is given, the program will begin counting from the end of the existing string, and will insert the new string after the character indicated by #the index.\
+\
+#"dog".insert(-1, "House") #=> "dogHouse"\
+#"dog".insert(0, "House") # => "Housedog"\
+#"dog".insert(1, "House") #=> "dHouseog"\
+#"dog".insert(-2, "House") #=> "doHouseg"\
+\
+#2 \
+Write a program that asks the user to enter 10 words, one at a time. The program should then display all 10 words in alphabetical order. Write this program using a loop so that you don't have to write any additional lines of code if you were to change the program to ask the user for 100 words. That is, you'd only need to make one simple change, and not have to write any new lines of code.\
+\
+puts "Welcome to the Alphabetizer!"\
+\
+puts "Please enter 10 words, making sure to press 'Enter' after each word."\
+\
+words = []\
+\
+10.times do |word|\
+  words[word] = gets.chomp\
+end\
+\
+puts "Awesome! Here are your words in alphabetical order:"\
+puts words.sort\
+\
+# The only changes necessary in order for this to work for 100 names would be to change the \
+# number at the beginning of the loop and in the welcome message to the user.\
+\
+\
+#3\
+Write a program that asks the user to enter a word, and the program will output the letters of that word in random order. (For example, "cat" may output "atc" or "tac" or "act" etc.) To accomplish this, investigate the following methods:\
+The string's "split" method\
+The array's "shuffle" method\
+The array's "join" method}

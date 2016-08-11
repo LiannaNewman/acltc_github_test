@@ -1,0 +1,43 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 #1\
+words = ["zebra", "monkey", "aardvark"]\
+\
+puts words.sort\
+\
+#2\
+words = []\
+\
+puts "Please enter four random words, making sure to press enter after each word:"\
+\
+4.times do |x|\
+  words[x] = gets.chomp\
+end\
+\
+puts "Thanks! Now please choose a number between 0 and 3. What is your number?"\
+num = gets.chomp.to_i\
+\
+p words[num]\
+\
+#3\
+puts "Welcome to the Median Calculator!"\
+puts "How many numbers would you like to calculate the median of?"\
+\
+how_many = gets.chomp.to_i\
+\
+puts "Great! Now, please enter your numbers, making sure to press 'Enter' after each one."\
+\
+nums = []\
+\
+how_many.times do |x|\
+  nums[x] = gets.chomp.to_i\
+end\
+\
+nums = nums.sort\
+\
+if nums.length.even? == true\
+  nums (nums[center] + nums[center+1])/2 : nums[center]}

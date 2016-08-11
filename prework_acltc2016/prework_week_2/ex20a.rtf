@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 #1\
+people = [                                                                                              #1, 19, 32, 43\
+  \{                                                                                                           #2, 20\
+    "first_name" => "Bob",                                                                       #3 \
+    "last_name" => "Jones",                                                                     #4\
+    "hobbies" => ["basketball", "chess", "phone tag"]                              #5, 22, 25, 28\
+   \},                                                                                                         #6\
+   \{                                                                                                          #7, 33\
+    "first_name" => "Molly",                                                                    #8\
+    "last_name" => "Barker",                                                                   #9\
+    "hobbies" => ["programming", "reading", "jogging"]                          #10, 35, 38, 41\
+   \},                                                                                                         #11\
+   \{                                                                                                          #12, 44\
+    "first_name" => "Kelly",                                                                     #13\
+    "last_name" => "Miller",                                                                     #14\
+    "hobbies" => ["cricket", "baking", "stamp collecting"]                        #15, 46, 49, 52\
+   \}                                                                                                          #16\
+]                                                                                                             #17\
+\
+people.each do |person|                                                                         #18, 31, 42\
+  person["hobbies"].each do |hobby|                                                      #21, 24, 27, 34, 37, 40, 45, 48, 51\
+    puts hobby.upcase                                                                              #23, 26, 29, 36, 39, 42, 47, 50, 53\
+  end                                                                                                        #30, 41, 54\
+end                                                                                                          #55\
+\
+\
+}
